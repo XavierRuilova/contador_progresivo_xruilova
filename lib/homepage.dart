@@ -12,6 +12,7 @@ class _MyHomePageState extends State<MyHomePage> {
   String fondo = 'assets/fondopantalla.jpeg';
   int count = 0;
   int sum = 1;
+  Color baseColor = Colors.white30;
 
   @override
   Widget build(BuildContext context) {
@@ -179,6 +180,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             setState(() {
                               fondo = 'assets/fondopantalla.jpeg';
                             });
+
                           },
                           child: const SizedBox(
                             width: 80,
@@ -228,7 +230,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           style: ElevatedButton.styleFrom(
                             shape: const CircleBorder(),
                             padding: const EdgeInsets.all(10),
-                            backgroundColor: Colors.white30,
+                            backgroundColor: baseColor,
                           ),
                           child: const Text(
                             '1',
@@ -236,7 +238,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           ),
                           onPressed: () {
                             setState(() {
-                              sum = 1;
+                              sum = 1;                              
                             });
                           },
                         ),
@@ -244,7 +246,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           style: ElevatedButton.styleFrom(
                             shape: const CircleBorder(),
                             padding: const EdgeInsets.all(10),
-                            backgroundColor: Colors.white30,
+                            backgroundColor: baseColor,
                           ),
                           child: const Text(
                             '5',
@@ -260,7 +262,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           style: ElevatedButton.styleFrom(
                             shape: const CircleBorder(),
                             padding: const EdgeInsets.all(10),
-                            backgroundColor: Colors.white30,
+                            backgroundColor: baseColor,
                           ),
                           child: const Text(
                             '10',
@@ -276,7 +278,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           style: ElevatedButton.styleFrom(
                             shape: const CircleBorder(),
                             padding: const EdgeInsets.all(10),
-                            backgroundColor: Colors.white30,
+                            backgroundColor: baseColor,
                           ),
                           child: const Text(
                             '20',
